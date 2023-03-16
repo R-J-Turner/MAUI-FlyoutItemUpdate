@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_FlyoutItemUpdate.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_FlyoutItemUpdate"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        x:Name="Home"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Icon="about"
+        Route="MAUI_FlyoutItemUpdate.MainPage" />
+    <ShellContent
+        x:Name="Transactions"
+        Title="Transactions"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Icon="about"
+        Route="MAUI_FlyoutItemUpdate.MainPage" />
+    <ShellContent
+        x:Name="Test"
+        Title="Test"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        FlyoutItemIsVisible="False"
+        Icon="about"
+        IsEnabled="False"
+        IsVisible="False"
+        Route="MAUI_FlyoutItemUpdate.MainPage" />
+
+</Shell>
